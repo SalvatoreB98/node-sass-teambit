@@ -3,12 +3,20 @@ header {
   justify-content: space-between;
 }
 header a {
-  color: #58402c;
-  font-weight: 500;
+  font-size: 13px;
+  color: #0015ff;
+  font-weight: 700;
   margin: 0px 10px;
 }
 header a:hover {
-  color: #bd987a;
+  color: #b3b9ff;
+}
+
+.logo {
+  width: 200px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .mt-1 {
@@ -71,6 +79,11 @@ header a:hover {
      object-fit: contain;
 }
 
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
 .col-6 {
   width: 50%;
 }
@@ -78,7 +91,8 @@ header a:hover {
 .btn {
   display: inline-block;
   text-decoration: none;
-  background-color: #2e4790;
+  color: #0015ff;
+  background-color: #0e14ee;
   padding: 5px 10px;
   color: white;
   border-radius: 5px;
@@ -97,7 +111,7 @@ header a:hover {
 
 html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #58402c;
+  color: #0015ff;
 }
 
 h1 {
@@ -113,10 +127,18 @@ h1 {
 
 .horizontal-line {
   width: 100%;
-  border-bottom: 1px solid #58402c;
+  border-bottom: 1px solid #0015ff;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
+  color: #0015ff;
+}
+
+.google-sign-up {
+  color: #0e14ee;
+  border: 1px solid #0e14ee;
+  border-radius: 5px;
+  padding: 5px;
 }
