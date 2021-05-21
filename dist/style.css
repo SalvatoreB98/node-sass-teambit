@@ -1,19 +1,20 @@
 header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 header a {
   font-size: 13px;
-  color: #0015ff;
+  color: #252835;
   font-weight: 700;
   margin: 0px 10px;
 }
 header a:hover {
-  color: #b3b9ff;
+  color: #7f14d4;
 }
-
-.logo {
-  width: 200px;
+header .logo {
+  width: 20%;
+  max-width: 200px;
   height: 50px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -41,6 +42,10 @@ header a:hover {
 
 .padding-3 {
   padding: 3em;
+}
+
+.padding-4 {
+  padding: 4em;
 }
 
 .pt-1 {
@@ -84,15 +89,11 @@ header a:hover {
   align-items: center;
 }
 
-.col-6 {
-  width: 50%;
-}
-
 .btn {
   display: inline-block;
   text-decoration: none;
-  color: #0015ff;
-  background-color: #0e14ee;
+  color: #252835;
+  background-color: #0414b3;
   padding: 5px 10px;
   color: white;
   border-radius: 5px;
@@ -101,6 +102,20 @@ header a:hover {
 .btn img {
   width: 15px;
   vertical-align: middle;
+}
+.btn:hover {
+  color: white;
+}
+
+.bg-light {
+  background: #d6d8f5;
+}
+
+.text-align-center {
+  text-align: center;
+}
+.text-align-center img {
+  width: 33%;
 }
 
 * {
@@ -111,7 +126,7 @@ header a:hover {
 
 html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #0015ff;
+  color: #252835;
 }
 
 h1 {
@@ -122,23 +137,71 @@ h1 {
 .wrap {
   width: 80%;
   margin: auto;
-  max-width: "900px";
+  max-width: 1200px;
 }
 
 .horizontal-line {
   width: 100%;
-  border-bottom: 1px solid #0015ff;
+  border-bottom: 1px solid #0414b3;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
-  color: #0015ff;
+  color: #252835;
 }
 
 .google-sign-up {
-  color: #0e14ee;
-  border: 1px solid #0e14ee;
+  color: #0414b3;
+  border: 1px solid #0414b3;
   border-radius: 5px;
   padding: 5px;
+}
+
+.col-1 {
+  width: 5.5833333333%;
+}
+
+.col-2 {
+  width: 14.1666666667%;
+}
+
+.col-3 {
+  width: 22.75%;
+}
+
+.col-4 {
+  width: 31.3333333333%;
+}
+
+.col-5 {
+  width: 39.9166666667%;
+}
+
+.col-6 {
+  width: 48.5%;
+}
+
+.col-7 {
+  width: 57.0833333333%;
+}
+
+.col-8 {
+  width: 65.6666666667%;
+}
+
+.col-9 {
+  width: 74.25%;
+}
+
+.col-10 {
+  width: 82.8333333333%;
+}
+
+.col-11 {
+  width: 91.4166666667%;
+}
+
+.col-12 {
+  width: 100%;
 }

@@ -4,7 +4,7 @@
     margin-top: 1em * $i;
     }
 }
-@for $i from 1 through 3 {
+@for $i from 1 through 4 {
     .padding-#{$i} {
     padding: 1em * $i;
     }
@@ -33,9 +33,6 @@
     display: flex;
     align-items: center;
 }
-.col-6{
-    width: 50%;
-}
 .btn{
     @include reset-a;
     background-color: $third-color;
@@ -47,4 +44,17 @@
         width: 15px;
         vertical-align: middle;
     }
+    &:hover{
+        color: white;
+    }
 }
+.bg-light{
+    background: $sixth-color;
+}
+.text-align-center{
+    text-align: center;
+    img{
+        width: 33%;
+    }
+}
+// RESPONSIVENESS
