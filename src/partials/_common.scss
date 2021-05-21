@@ -1,0 +1,23 @@
+*{
+    @include reset;
+}
+html{
+    font-family: $font-family;
+    color: $primary-color;
+}
+h1{
+    font-size: 2rem;
+    line-height: 1.4em;
+}
+.wrap{
+    width: 80%;
+    margin: auto;
+    max-width: $wrap;
+}
+.horizontal-line{
+    width: 100%;
+    border-bottom: 1px solid $primary-color;
+}
+a{
+    @include reset-a;
+}
