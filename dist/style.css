@@ -1,3 +1,7 @@
+ul {
+  list-style-type: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -14,6 +18,7 @@ header a:hover {
 }
 header .logo {
   width: 20%;
+  min-width: 120px;
   max-width: 200px;
   height: 50px;
   -o-object-fit: contain;
@@ -23,16 +28,12 @@ header .logo {
 .how-works {
   margin: auto;
 }
-.how-works img {
-  flex-shrink: 2;
-}
 .how-works a {
   color: #0414b3;
 }
 
 .get-started {
   background: #7f14d4;
-  background: linear-gradient(180deg, #7f14d4 0%, #0414b3 100%);
 }
 .get-started .block {
   text-align: left;
@@ -147,6 +148,7 @@ header .logo {
 }
 
 .btn {
+  margin: 3px;
   display: inline-block;
   text-decoration: none;
   color: #252835;
@@ -283,10 +285,15 @@ h1 .icon {
 @media screen and (max-width: 800px) {
   .flex {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer .flex {
+    flex-direction: column;
     align-items: center;
   }
 
-  .col-4 {
+  .after-before .col-4 {
     width: 100%;
   }
 
@@ -296,5 +303,26 @@ h1 .icon {
 
   .how-works .col-5 {
     width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .padding-2 {
+    padding: 0.5em;
+  }
+}
+footer h4 {
+  font-size: 1.2em;
+}
+footer li {
+  margin-top: 15px;
+}
+footer li a {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  footer .flex {
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }

@@ -10,3 +10,9 @@
     text-decoration: none;
     color: $primary-color;
 }
+@mixin  reset-ul {
+    list-style-type: none;
+}
+ul{
+    @include reset-ul();
+}

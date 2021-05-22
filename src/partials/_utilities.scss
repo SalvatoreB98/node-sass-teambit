@@ -47,6 +47,7 @@
     align-items: center;
 }
 .btn{
+    margin: 3px;
     @include reset-a;
     background-color: $third-color;
     padding: 5px 10px;

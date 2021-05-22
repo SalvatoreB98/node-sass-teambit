@@ -1,15 +1,11 @@
 .how-works{
     margin: auto;
-    img{
-      flex-shrink:  2;  
-    }
     a{
         color: $third-color;
     }
 }
 .get-started{
-    background: rgb(127,20,212);
-    background: linear-gradient(180deg, $secondary-color 0%, $third-color 100%);
+    background: $secondary-color;
     .block{
         text-align: left;
         background-color: white;
@@ -37,5 +33,4 @@
     a.btn{
         color: white;
     }
-
 }
