@@ -1,0 +1,41 @@
+.how-works{
+    margin: auto;
+    img{
+      flex-shrink:  2;  
+    }
+    a{
+        color: $third-color;
+    }
+}
+.get-started{
+    background: rgb(127,20,212);
+    background: linear-gradient(180deg, $secondary-color 0%, $third-color 100%);
+    .block{
+        text-align: left;
+        background-color: white;
+        border: 1px solid $third-color;
+        padding: $spacing;
+        border-radius: $spacing;
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        margin-top: $spacing;
+    }
+    .avatar{
+        padding: 20px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    p{
+        margin-top: 1em;
+    }
+    a{
+        color: $third-color;
+    }
+    a.btn{
+        color: white;
+    }
+
+}

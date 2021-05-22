@@ -20,6 +20,49 @@ header .logo {
      object-fit: contain;
 }
 
+.how-works {
+  margin: auto;
+}
+.how-works img {
+  flex-shrink: 2;
+}
+.how-works a {
+  color: #0414b3;
+}
+
+.get-started {
+  background: #7f14d4;
+  background: linear-gradient(180deg, #7f14d4 0%, #0414b3 100%);
+}
+.get-started .block {
+  text-align: left;
+  background-color: white;
+  border: 1px solid #0414b3;
+  padding: 25px;
+  border-radius: 25px;
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 25px;
+}
+.get-started .avatar {
+  padding: 20px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.get-started p {
+  margin-top: 1em;
+}
+.get-started a {
+  color: #0414b3;
+}
+.get-started a.btn {
+  color: white;
+}
+
 .mt-1 {
   margin-top: 1em;
 }
@@ -77,11 +120,25 @@ header .logo {
   justify-content: space-between;
 }
 
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
 .img-responsive {
   width: 100%;
-  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.bg-light .img-responsive {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 150px;
 }
 
 .align-items-center {
@@ -114,48 +171,14 @@ header .logo {
 .text-align-center {
   text-align: center;
 }
-.text-align-center img {
+
+.after-before .text-align-center img {
   width: 33%;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #252835;
-}
-
-h1 {
-  font-size: 2rem;
-  line-height: 1.4em;
-}
-
-.wrap {
-  width: 80%;
-  margin: auto;
-  max-width: 1200px;
-}
-
-.horizontal-line {
-  width: 100%;
-  border-bottom: 1px solid #0414b3;
-}
-
-a {
+.middle {
   display: inline-block;
-  text-decoration: none;
-  color: #252835;
-}
-
-.google-sign-up {
-  color: #0414b3;
-  border: 1px solid #0414b3;
-  border-radius: 5px;
-  padding: 5px;
+  vertical-align: middle;
 }
 
 .col-1 {
@@ -204,4 +227,74 @@ a {
 
 .col-12 {
   width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #252835;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.7em;
+}
+
+.wrap {
+  width: 80%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.horizontal-line {
+  width: 100%;
+  border-bottom: 1px solid #0414b3;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #252835;
+}
+
+.google-sign-up {
+  color: #0414b3;
+  border: 1px solid #0414b3;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.illustration {
+  width: 50%;
+}
+
+h1 .icon {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 800px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-4 {
+    width: 100%;
+  }
+
+  .bg-light p {
+    text-align: center;
+  }
+
+  .how-works .col-5 {
+    width: 100%;
+  }
 }
